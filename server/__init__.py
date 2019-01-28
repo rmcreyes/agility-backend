@@ -1,0 +1,1 @@
+"""Modularize the server directory."""
