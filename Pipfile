@@ -7,6 +7,10 @@ verify_ssl = true
 
 [packages]
 flask = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.6"
+
+[scripts]
+launch = "gunicorn -b 0.0.0.0:5000 -w 4 server.server:app"
